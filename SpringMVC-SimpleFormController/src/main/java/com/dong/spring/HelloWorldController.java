@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.SimpleFormController;
 
+
 public class HelloWorldController extends SimpleFormController {
 	
 	private String viewPage;
@@ -16,7 +17,10 @@ public class HelloWorldController extends SimpleFormController {
 		model.put("helloWorld", helloWorld.getMsg());
 		return new ModelAndView(getViewPage(),model);
 	}
-
+	
+	/*
+	 * Set and Get
+	 */
 	public String getViewPage() {
 		return viewPage;
 	}
