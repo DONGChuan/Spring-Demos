@@ -10,7 +10,7 @@
 	<beans:bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 		<beans:property name="mappings">
 			<beans:props>
-			<beans:prop key="helloWorld.do">HelleWorldController</beans:prop>
+			<beans:prop key="helloWorld.do">HelloWorldController</beans:prop>
 			</beans:props>
 		</beans:property>
 	</beans:bean>
@@ -26,7 +26,7 @@
 	
 	<context:component-scan base-package="com.dong.spring" />
 	
-	<beans:bean id="HelleWorldController" class="com.dong.spring.HelloWorldController">
+	<beans:bean id="HelloWorldController" class="com.dong.spring.HelloWorldController">
 		<beans:property name="helloWorld">
 			<beans:value>HelloWorld</beans:value>
 		</beans:property>
